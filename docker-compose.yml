@@ -1,0 +1,10 @@
+services:
+  leetcode-postgres:
+    image: postgres:17
+    container_name: leetcode_db
+    environment:
+      POSTGRES_DB: leetcode
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres123
+    ports:
+      - "5439:5432"
